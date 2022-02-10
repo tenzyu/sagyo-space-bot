@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  sagyo-space-bot:
+    container_name: sagyo-space-bot
+    image: node
+    volumes:
+      - /home/deploy/sagyo-space-bot:/code
+    working_dir: /code
+    command: npm start
+    restart: always
